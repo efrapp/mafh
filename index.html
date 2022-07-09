@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Exercises</title>
+
+  <style>
+    #multiplication {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .operand, .operator, .equal, .multiply-result{
+      font-size: 50px;
+    }
+
+    input {
+      font-size: 40px;
+      width: 160px;
+    }
+  </style>
+  <script src="mafh.js"></script>
+</head>
+<body>
+  <div style="display: none;">
+  <h1> Ejercios de Suma </h1>
+  <div class="addend1"> 10 </div>
+  <div> + </div>
+  <div class="addend2"> 5 </div>
+  <div> = </div>
+  <div class="result"></div>
+  <button id="nextSum"> Nueva Suma </button>
+  </div>
+
+  <h1> Ejercios de Multiplicacion </h1>
+  <div id="multiplication">
+    <div class="operand operand1"> 10 </div>
+    <div class="operator"> x </div>
+    <div class="operand operand2"> 5 </div>
+    <div class="equal"> = </div>
+    <input type="text"></input>
+    <button id="showResult"> Mostrar Resultado </button>
+    <div class="multiply-result"> --- </div>
+    <button id="nextMultiply"> Nueva Multiplicacion </button>
+  </div>
+
+</body>
+</html>
