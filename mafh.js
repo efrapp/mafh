@@ -19,9 +19,13 @@ function displayAddend() {
 function displayMultiply() {
   const operand1 = document.getElementsByClassName('operand1')[0];
   const operand2 = document.getElementsByClassName('operand2')[0];
+  const result = document.getElementsByClassName('multiply-result')[0];
+  const inputResult = document.getElementsByClassName('inputResult')[0];
 
   operand1.innerHTML = generateNumber(minVal = 1, maxVal = 10);
   operand2.innerHTML = generateNumber(minVal = 1, maxVal = 10);
+  result.innerHTML = '---';
+  inputResult.value = '';
 }
 
 function multiplication() {
